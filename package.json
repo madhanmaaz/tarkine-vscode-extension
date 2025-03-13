@@ -1,0 +1,53 @@
+{
+    "name": "tarkine-vscode-extension",
+    "displayName": "Tarkine",
+    "description": "Tarkine vscode language support.",
+    "version": "0.0.1",
+    "publisher": "madhanmaaz",
+    "author": {
+        "name": "madhanmaaz",
+        "url": "https://madhanmaaz.netlify.app"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/madhanmaaz/tarkine-vscode-extension"
+    },
+    "icon": "assets/icon.webp",
+    "engines": {
+        "vscode": "^1.54.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [
+            {
+                "id": "html",
+                "configuration": "./language-configuration.json"
+            }
+        ],
+        "grammars": [
+            {
+                "scopeName": "text.html",
+                "path": "./syntaxes/html.tmLanguage.json",
+                "injectTo": [
+                    "text.html"
+                ]
+            }
+        ],
+        "snippets": [
+            {
+                "language": "html",
+                "path": "./snippets/snippets.json"
+            }
+        ],
+        "configurationDefaults": {
+            "files.associations": {
+                "*.tark": "html"
+            },
+            "emmet.includeLanguages": {
+                "tark": "html"
+            }
+        }
+    }
+}

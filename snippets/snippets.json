@@ -1,0 +1,85 @@
+{
+    "Tarkine comment": {
+        "prefix": "#",
+        "body": [
+            "{{# $1 }}"
+        ],
+        "description": "Tarkine comment block"
+    },
+    "Tarkine no escapeHTML": {
+        "prefix": "-",
+        "body": [
+            "{{- $1 }}"
+        ],
+        "description": "Tarkine no escapeHTML"
+    },
+    "Tarkine if condition": {
+        "prefix": "if",
+        "body": [
+            "{{:if $1 }}",
+            "    $2",
+            "{{/if}}"
+        ],
+        "description": "Tarkine if"
+    },
+    "Tarkine elseif condition": {
+        "prefix": "elseif",
+        "body": [
+            "{{:else if $1 }}",
+            "    $2"
+        ],
+        "description": "Tarkine elseif"
+    },
+    "Tarkine else condition": {
+        "prefix": "else",
+        "body": [
+            "{{:else}}",
+            "    $1"
+        ],
+        "description": "Tarkine else"
+    },
+    "Tarkine if end": {
+        "prefix": "/",
+        "body": [
+            "{{/if}}"
+        ],
+        "description": "Tarkine if end"
+    },
+    "Tarkine for end": {
+        "prefix": "/",
+        "body": [
+            "{{/for}}"
+        ],
+        "description": "Tarkine for end"
+    },
+    "Tarkine for loop": {
+        "prefix": "for",
+        "body": [
+            "{{:for value, key in object }}",
+            "    $1",
+            "{{/for}}"
+        ],
+        "description": "Tarkine loop"
+    },
+    "Tarkine include": {
+        "prefix": "include",
+        "body": [
+            "{{- include(\"$1\", { }) }}"
+        ],
+        "description": "Tarkine include"
+    },
+    "Tarkine code execution": {
+        "prefix": "expr",
+        "body": [
+            "{{~ $1 }}"
+        ],
+        "description": "Tarkine code execution"
+    },
+    "Tarkine store access": {
+        "prefix": "$",
+        "body": [
+            "{{ $.$1 }}"
+        ],
+        "description": "Tarkine store access"
+    }
+}
