@@ -8,4 +8,4 @@
 
 - language support for tarkine
 
-https://github.com/madhanmaaz/tarkine
+[Tarkine Github](https://github.com/madhanmaaz/tarkine)

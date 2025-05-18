@@ -52,6 +52,54 @@
         ],
         "description": "Tarkine for end"
     },
+    "Tarkine macro end": {
+        "prefix": "/",
+        "body": [
+            "{{/macro}}"
+        ],
+        "description": "Tarkine macro end"
+    },
+    "Tarkine extends end": {
+        "prefix": "/",
+        "body": [
+            "{{/extends}}"
+        ],
+        "description": "Tarkine extends end"
+    },
+    "Tarkine slot end": {
+        "prefix": "/",
+        "body": [
+            "{{/slot}}"
+        ],
+        "description": "Tarkine slot end"
+    },
+    "Tarkine macro": {
+        "prefix": "macro",
+        "body": [
+            "{{:macro $1()}}",
+            "    ",
+            "{{/macro}}"
+        ],
+        "description": "Tarkine macro"
+    },
+    "Tarkine extends": {
+        "prefix": "extends",
+        "body": [
+            "{{:extends \"$1\"}}",
+            "    ",
+            "{{/extends}}"
+        ],
+        "description": "Tarkine extends"
+    },
+    "Tarkine slot": {
+        "prefix": "slot",
+        "body": [
+            "{{:slot \"$1\"}}",
+            "    ",
+            "{{/slot}}"
+        ],
+        "description": "Tarkine slot"
+    },
     "Tarkine for loop": {
         "prefix": "for",
         "body": [
